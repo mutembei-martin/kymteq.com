@@ -52,3 +52,8 @@ background:transparent;
 
   }
 }
+.logo{
+	max-width: 150px;
+	max-height: 150px;
+	margin-left: 5%;
+}
