@@ -51,14 +51,14 @@ background:transparent;
 }
 @media screen and (max-width: 480px) {
 	.home{
-	margin-top:20px;
+	margin-top:8px;
 }
  .menutext {
  		display:none;
 
   }
 }
-.logo{
+/*.logo{
 	transform:scale(0.4);
 	margin-top: -9%;
 }
@@ -67,7 +67,7 @@ background:transparent;
 
 	transform:scale(0.2);
 
-  }
+  }*/
 .cal{
 	margin-top: 15px;
 	text-align:right;
