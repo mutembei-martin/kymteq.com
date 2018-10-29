@@ -8,3 +8,47 @@
   height: 100%;
   border:15px solid #fff;
 }
+.menupg {
+background:transparent;
+  position: relative;
+  height: 45px;
+  width: 60%;
+  text-align: left;
+  color: #0ff;
+}
+
+.btn-menu{
+	position: absolute;
+	width: 20%;
+	height: 5%;
+	background: transparent;
+	left: 5%;
+}
+.btn-menu .lines{position:relative;margin-left:20px;margin-top:10px;display:inline-block;width:30px;height:27px;vertical-align:middle;z-index:1;float:left;}
+
+.btn-menu .lines span{position:absolute;display:block;height:5px;width:100%;background:#00e6e6;float:left;margin-top: 50%;}
+
+.btn-menu .lines span:nth-child(1){top:0}
+
+.btn-menu .lines span:nth-child(2){top:8px}
+
+.btn-menu .lines span:nth-child(3){top:16px}
+.menutext{
+	position: absolute;
+	margin-top:19px;
+	text-decoration: none;
+	margin-left: 20px;
+	font-size: 1.7em;
+	font-weight: bold;
+	color: #00e6e6;
+}
+.menutext:hover{
+	text-decoration: none;
+	color: #00e6e6;
+}
+@media screen and (max-width: 480px) {
+ .menutext {
+ 		display:none;
+
+  }
+}
