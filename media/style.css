@@ -51,7 +51,7 @@ background:transparent;
 }
 @media screen and (max-width: 480px) {
 	.home{
-	margin-top:20px;
+	margin-top:15px;
 }
  .menutext {
  		display:none;
@@ -190,7 +190,7 @@ margin-left:70px;
 	display: none;
 }
 @media screen and (max-width: 480px) {
-.cal{
-
+.calholder{
+	transform: scale(0.8);
 }
 }
