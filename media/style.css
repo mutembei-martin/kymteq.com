@@ -8,9 +8,9 @@
   height: 100%;
   border:15px solid #fff;
 }
-/*.home{
+.home{
 	margin-top: 40px;
-}*/
+}
 .menupg {
 background:transparent;
 /*  position: relative;*/
@@ -51,7 +51,7 @@ background:transparent;
 }
 @media screen and (max-width: 480px) {
 	.home{
-	margin-top:8px;
+	margin-top:30px;
 }
  .menutext {
  		display:none;
@@ -69,14 +69,128 @@ background:transparent;
 
   }*/
 .cal{
+	background:transparent;
+    height: 90px;
+  margin-top:-20px;
+/*  margin-right: 20px;*/
+}
+.calholder{
 	margin-top: 15px;
-	text-align:right;
-	font-size: 2em;
+	height: 70px;
+	width: 85px;
+	float: right;
+	background: #000;
+}
+.topband{
+	margin-top: -20px;
+	height: 20px;
+	width: 100%;
+	background: transparent;
+}
+.vert1{
+	position: absolute;
+height: 10px;
+width: 5px;
+background: #000;
+margin-top:10px;
+margin-left: 10px;
+float: right;
+}
 
+.vert2{
+position: absolute;
+height: 10px;
+width: 5px;
+background: #000;
+margin-top:10px;
+margin-left:25px;
+}
+
+.vert3{
+position: absolute;
+height: 10px;
+width: 5px;
+background: #000;
+margin-top:10px;
+margin-left:40px;
+}
+
+.vert4{
+position: absolute;
+height: 10px;
+width: 5px;
+background: #000;
+margin-top:10px;
+margin-left:55px;
+}
+.vert5{
+position: absolute;
+height: 10px;
+width: 5px;
+background: #000;
+margin-top:10px;
+margin-left:70px;
+}
+.year{
+	text-align: center;
+	font-size: 0.97em;
+	font-weight: bold;
+	color: #fff;
+	padding-top:7px; 
+	display: none;
+}
+#year{
+	margin-top:-20px;
+	display: none;
+}
+.month{
+	width: 75px;
+	height: 35px;
+	background: #fff;
+	margin-top: -8px;
+	margin-left: 5px;
+	color: #000;
+	text-align: center;
+	display: none;
+}
+#month{
+	font-size: 1.7em;
+	font-family: algerian;
+	font-weight: bold;
+	display: none;
+}
+
+
+.day{
+	text-align: center;
+	font-size: 0.97em;
+	font-weight: bold;
+	color: #fff;
+	padding-top:7px; 
+/*	display: none;*/
+}
+#Day{
+	margin-top:0px;
+/*	display: none;*/
+}
+.date{
+	width: 75px;
+	height: 35px;
+	background: #fff;
+	margin-top: -8px;
+	margin-left: 5px;
+	color: #000;
+	text-align: center;
+/*	display: none;
+*/}
+#Date{
+	font-size: 1.7em;
+	font-family: algerian;
+	font-weight: bold;
+/*	display: none;*/
 }
 @media screen and (max-width: 480px) {
 .cal{
-	font-size: 1.5em;
 
 }
 }
