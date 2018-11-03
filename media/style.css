@@ -69,7 +69,7 @@ background:transparent;
 
   }*/
 .cal{
-	background:transparent;
+	background:#fff;
     height: 90px;
   margin-top:-20px;
 /*  margin-right: 20px;*/
@@ -192,5 +192,330 @@ margin-left:70px;
 @media screen and (max-width: 480px) {
 .calholder{
 	transform: scale(0.8);
+}
+}
+
+.kymteq{
+	height: 150px;
+	background: transparent;
+	margin-top: 100px;
+}
+
+
+.name1{
+	width: 250px;
+	margin-left: 30%;
+	color: #000;
+	font-weight: bold;
+	background: transparent;
+	text-align: center;
+	font-size: 3em;
+	border-bottom: 2px solid #000;
+	border-top: 2px solid #000;
+	border-left: 2px solid #000;
+
+}
+.name2{
+	margin-top: -2px;
+	margin-left: 100px;
+	margin-left: 45%;
+	width: 310px;
+	color: #000;
+	font-weight: bold;
+	background: transparent;
+	text-align: center;
+	font-size: 3em;
+	border-bottom: 2px solid #000;
+	border-right: 2px solid #000;
+	border-top: 2px solid #000;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.name1 {
+  color: black;
+  animation: fadeWhite 4s forwards;
+  animation-delay: 2s;
+  position: relative;
+}
+.marto:last-child:after {
+  content: "KYMTEQ";
+  position: absolute;
+  left: 35px;
+  top: 0;
+  clip: rect(0, 900px, 0, 0);
+  background-color: transparent;
+  color: black;
+  animation: glitch 3s infinite alternate-reverse;
+  animation-delay: 4s;
+}
+.marto:last-child:before {
+  content: "KYMTEQ";
+  position: absolute;
+  left: 36px;
+  top: 0;
+  clip: rect(0, 900px, 0, 0);
+  background-color: transparent;
+  color: black;
+  animation: glitch 3s infinite alternate-reverse;
+  animation-delay: 4s;
+}
+
+@keyframes fadeWhite {
+  100% {
+    color: black;
+  }
+}
+@keyframes glitch {
+  0% {
+    clip: rect(7px, 9999px, 75px, 0);
+  }
+  5% {
+    clip: rect(52px, 9999px, 90px, 0);
+  }
+  10% {
+    clip: rect(72px, 9999px, 51px, 0);
+  }
+  15% {
+    clip: rect(69px, 9999px, 45px, 0);
+  }
+  20% {
+    clip: rect(84px, 9999px, 29px, 0);
+  }
+  25% {
+    clip: rect(29px, 9999px, 60px, 0);
+  }
+  30% {
+    clip: rect(58px, 9999px, 42px, 0);
+  }
+  35% {
+    clip: rect(88px, 9999px, 91px, 0);
+  }
+  40% {
+    clip: rect(29px, 9999px, 19px, 0);
+  }
+  45% {
+    clip: rect(42px, 9999px, 73px, 0);
+  }
+  50% {
+    clip: rect(52px, 9999px, 85px, 0);
+  }
+  55% {
+    clip: rect(59px, 9999px, 22px, 0);
+  }
+  60% {
+    clip: rect(49px, 9999px, 26px, 0);
+  }
+  65% {
+    clip: rect(22px, 9999px, 77px, 0);
+  }
+  70% {
+    clip: rect(79px, 9999px, 87px, 0);
+  }
+  75% {
+    clip: rect(85px, 9999px, 94px, 0);
+  }
+  80% {
+    clip: rect(64px, 9999px, 86px, 0);
+  }
+  85% {
+    clip: rect(31px, 9999px, 10px, 0);
+  }
+  90% {
+    clip: rect(45px, 9999px, 1px, 0);
+  }
+  95% {
+    clip: rect(82px, 9999px, 5px, 0);
+  }
+  100% {
+    clip: rect(23px, 9999px, 94px, 0);
+  }
+}
+
+
+
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.name2 {
+  color: black;
+  animation: fadeWhite 4s forwards;
+  animation-delay: 2s;
+  position: relative;
+}
+.tembe:last-child:after {
+  content: "GLITCH";
+  position: absolute;
+  left: 77px;
+  top: 0;
+  clip: rect(0, 900px, 0, 0);
+  background-color: transparent;
+  color: black;
+  animation: glitch 3s infinite alternate-reverse;
+  animation-delay: 4s;
+}
+.tembe:last-child:before {
+  content: "GLITCH";
+  position: absolute;
+  left: 75px;
+  top: 0;
+  clip: rect(0, 900px, 0, 0);
+  background-color: transparent;
+  color: black;
+  animation: glitch 3s infinite alternate-reverse;
+  animation-delay: 4s;
+}
+
+@keyframes fadeWhite {
+  100% {
+    color: black;
+  }
+}
+@keyframes glitch {
+  0% {
+    clip: rect(7px, 9999px, 75px, 0);
+  }
+  5% {
+    clip: rect(52px, 9999px, 90px, 0);
+  }
+  10% {
+    clip: rect(72px, 9999px, 51px, 0);
+  }
+  15% {
+    clip: rect(69px, 9999px, 45px, 0);
+  }
+  20% {
+    clip: rect(84px, 9999px, 29px, 0);
+  }
+  25% {
+    clip: rect(29px, 9999px, 60px, 0);
+  }
+  30% {
+    clip: rect(58px, 9999px, 42px, 0);
+  }
+  35% {
+    clip: rect(88px, 9999px, 91px, 0);
+  }
+  40% {
+    clip: rect(29px, 9999px, 19px, 0);
+  }
+  45% {
+    clip: rect(42px, 9999px, 73px, 0);
+  }
+  50% {
+    clip: rect(52px, 9999px, 85px, 0);
+  }
+  55% {
+    clip: rect(59px, 9999px, 22px, 0);
+  }
+  60% {
+    clip: rect(49px, 9999px, 26px, 0);
+  }
+  65% {
+    clip: rect(22px, 9999px, 77px, 0);
+  }
+  70% {
+    clip: rect(79px, 9999px, 87px, 0);
+  }
+  75% {
+    clip: rect(85px, 9999px, 94px, 0);
+  }
+  80% {
+    clip: rect(64px, 9999px, 86px, 0);
+  }
+  85% {
+    clip: rect(31px, 9999px, 10px, 0);
+  }
+  90% {
+    clip: rect(45px, 9999px, 1px, 0);
+  }
+  95% {
+    clip: rect(82px, 9999px, 5px, 0);
+  }
+  100% {
+    clip: rect(23px, 9999px, 94px, 0);
+  }
+}
+
+
+@media screen and (max-width: 991px) {
+ .name1 {
+ 	margin-left: 25%;
+  }
+
+.name2{
+	margin-left:40%;
+}
+.marto:last-child:after {
+ left: 35px;
+}
+.marto:last-child:before {
+ left: 35px;
+}
+.tembe:last-child:after {
+ left: 77px;
+}
+.tembe:last-child:before {
+ left: 77px;
+}
+}
+
+@media screen and (max-width: 750px) {
+ .name1 {
+ 	margin-left: 15%;
+  }
+
+.name2{
+	margin-left:35%;
+}
+}
+
+@media screen and (max-width: 640px) {
+ .name1 {
+ 	font-size: 2.5em;
+ 	margin-left: 10%;
+  }
+
+.name2{
+	font-size: 2.5em;
+	margin-left:25%;
+}
+.marto:last-child:after {
+ left: 51px;
+}
+.marto:last-child:before {
+ left: 51px;
+}
+.tembe:last-child:after {
+ left: 91px;
+}
+.tembe:last-child:before {
+ left: 91px;
+}
+}
+
+
+@media screen and (max-width: 480px) {
+ .name1 {
+ 	width: 200px;
+ 	font-size: 2.3em;
+ 	margin-left: 5%;
+  }
+
+.name2{
+	width: 260px;
+	font-size: 2.3em;
+	margin-left:20%;
+}
+.marto:last-child:after {
+ left: 32px;
+}
+.marto:last-child:before {
+ left: 32px;
+}
+.tembe:last-child:after {
+ left: 71px;
+}
+.tembe:last-child:before {
+ left: 71px;
 }
 }
