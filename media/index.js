@@ -180,74 +180,103 @@ function drawHand(ctx, pos, length, width) {
 var month;
 switch (new Date().getMonth()) {
     case 0:
-        day = "JAN";
+        day = "JANUARY";
         break;
     case 1:
-        day = "FEB";
+        day = "FEBRUARY";
         break;
     case 2:
-        day = "MAR";
+        day = "MARCH";
         break;
     case 3:
-        day = "APR";
+        day = "APRIL";
         break;
     case 4:
         day = "MAY";
         break;
     case 5:
-        day = "JUN";
+        day = "JUNE";
         break;
     case  6:
-        day = "JUL";
+        day = "JULY";
     case 7:
-        day = "AUG";
+        day = "AUGUST";
         break;
     case 8:
-        day = "SEP";
+        day = "SEPTEMBER";
         break;
     case 9:
-        day = "OCT";
+        day = "OCTOBER";
         break;
     case 10:
-        day = "NOV";
+        day = "NOVEMBER";
         break;
     case 11:
-        day = "DEC";
+        day = "DECEMBER";
         
 }
 
-document.getElementById("mon").innerHTML =day;
+document.getElementById("Year").innerHTML =day;
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 var d = new Date();
-document.getElementById("year").innerHTML=d.getFullYear();
+document.getElementById("month").innerHTML=d.getFullYear();
 
 //////////////////////////////////////////////////////////////    DAY      ////////////////////////////////////////////////////////////////////
 
 var day;
 switch (new Date().getDay()) {
     case 0:
-        day = "SUN";
+        day = "SUNDAY";
         break;
     case 1:
-        day = "MON";
+        day = "MONDAY";
         break;
     case 2:
-        day = "TUE";
+        day = "TUESDAY";
         break;
     case 3:
-        day = "WED";
+        day = "WEDNESDAY";
         break;
     case 4:
-        day = "THU";
+        day = "THURSDAY";
         break;
     case 5:
-        day = "FRI";
+        day = "FRIDAY";
         break;
     case  6:
-        day = "SAT";
+        day = "SATURDAY";
 }
 
-document.getElementById("day").innerHTML =day;
+document.getElementById("Day").innerHTML =day;
 var d = new Date();
-document.getElementById("date").innerHTML=d.getDate()+ "th";
+if (d.getDate() == 1) {
+document.getElementById("Date").innerHTML=d.getDate()+ " st";
+}
+else if (d.getDate() == 2) {
+  document.getElementById("Date").innerHTML=d.getDate()+ " nd";
+}
+else if (d.getDate() == 3) {
+  document.getElementById("Date").innerHTML=d.getDate()+ " rd";
+}
+else{
+  document.getElementById("Date").innerHTML=d.getDate()+ " th";
+}
+
+
+
+
+/* HTML document is loaded. DOM is ready. 
+-------------------------------------------*/
+$(function(){
+
+  // ------- WOW ANIMATED ------ //
+  wow = new WOW(
+  {
+    mobile: false
+  });
+  wow.init();
+
+
+});
+
