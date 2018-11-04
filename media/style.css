@@ -524,6 +524,36 @@ margin-left:70px;
 }
 
 
+@media screen and (max-width: 340px) {
+  .kymteq{
+    margin-top: 30px;
+  }
+ .name1 {
+  width: 200px;
+  font-size: 2em;
+  margin-left: -5%;
+  }
+
+.name2{
+  width: 260px;
+  font-size: 2em;
+  margin-left:6%;
+}
+.marto:last-child:after {
+ left: 41px;
+}
+.marto:last-child:before {
+ left: 41px;
+}
+.tembe:last-child:after {
+ left: 79px;
+}
+.tembe:last-child:before {
+ left: 79px;
+}
+}
+
+
 .realize{
   height: auto;
   text-align: center;
@@ -540,6 +570,14 @@ margin-left:70px;
   margin-top: 10px;
 }
 }
+
+@media screen and (max-width: 340px) {
+.realize{
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+}
+
 
 .navbar{
   height: 80px;
