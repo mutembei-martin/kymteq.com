@@ -96,7 +96,7 @@ background:transparent;
 .kymteq{
   height: 90px;
   font-size: 1.5em;
-  margin-top: 140px;
+  margin-top: 130px;
 }
 }
 
@@ -120,6 +120,7 @@ background:transparent;
 @media screen and (max-width: 340px) {
 .realize{
   font-size: 1.5em;
+  margin-top: 80px;
 }
 }
 
