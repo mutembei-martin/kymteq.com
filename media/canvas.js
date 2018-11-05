@@ -51,7 +51,7 @@ function Particle(x, y, radius, color) {
     this.radians = Math.random() * Math.PI * 2;
     this.velocity = 0.03;
     if (innerWidth < 310) {
-        this.distanceFromCenter = randomIntFromRange (60,120);
+        this.distanceFromCenter = randomIntFromRange (50,100);
     }
     else if (innerWidth < 434){
 
