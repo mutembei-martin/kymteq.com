@@ -92,7 +92,13 @@ background:transparent;
 }
 }
 
-
+@media screen and (max-width: 340px) {
+.kymteq{
+  height: 90px;
+  font-size: 1.5em;
+  margin-top: 140px;
+}
+}
 
 .realize{
   height: auto;
