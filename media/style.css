@@ -1,7 +1,5 @@
 #home{
-  background: -webkit-linear-gradient(135deg, #000, #333333);
-    background: linear-gradient(135deg, #000, #fff);
-    background-repeat:no-repeat;
+  background:#000;
   background-position: fill;
   position: absolute;
   width: 100%;
@@ -42,6 +40,7 @@ background:transparent;
 	text-decoration: none;
 	margin-left: 20px;
 	font-size: 1.7em;
+  z-index: 1;
 	font-weight: bold;
 	color: #00e6e6;
 }
@@ -68,513 +67,53 @@ background:transparent;
 	transform:scale(0.2);
 
   }*/
-.cal{
-	background:transparent;
-    height: 90px;
-  margin-top:-20px;
-/*  margin-right: 20px;*/
-}
-.calholder{
-	margin-top: 15px;
-	height: 70px;
-	width: 85px;
-	float: right;
-	background: #000;
-}
-.topband{
-	margin-top: -20px;
-	height: 20px;
-	width: 100%;
-	background: transparent;
-}
-.vert1{
-	position: absolute;
-height: 7px;
-width: 5px;
-background: #000;
-margin-top:14px;
-margin-left: 10px;
-float: right;
-}
-
-.vert2{
-position: absolute;
-height: 7px;
-width: 5px;
-background: #000;
-margin-top:14px;
-margin-left:25px;
-}
-
-.vert3{
-position: absolute;
-height: 7px;
-width: 5px;
-background: #000;
-margin-top:14px;
-margin-left:40px;
-}
-
-.vert4{
-position: absolute;
-height: 7px;
-width: 5px;
-background: #000;
-margin-top:14px;
-margin-left:55px;
-}
-.vert5{
-position: absolute;
-height: 7px;
-width: 5px;
-background: #000;
-margin-top:14px;
-margin-left:70px;
-}
-.year{
-	text-align: center;
-	font-size: 0.97em;
-	font-weight: bold;
-	color: #fff;
-	padding-top:7px; 
-	display: none;
-}
-#year{
-	margin-top:-20px;
-	display: none;
-}
-.month{
-	width: 75px;
-	height: 35px;
-	background: #fff;
-	margin-top: -8px;
-	margin-left: 5px;
-	color: #000;
-	text-align: center;
-	display: none;
-}
-#month{
-	font-size: 1.7em;
-	font-family: algerian;
-	font-weight: bold;
-	display: none;
-}
-
-
-.day{
-	text-align: center;
-	font-size: 0.97em;
-	font-weight: bold;
-	color: #fff;
-	padding-top:7px; 
-/*	display: none;*/
-}
-#Day{
-	margin-top:0px;
-/*	display: none;*/
-}
-.date{
-	width: 75px;
-	height: 35px;
-	background: #fff;
-	margin-top: -8px;
-	margin-left: 5px;
-	color: #000;
-	text-align: center;
-/*	display: none;
-*/}
-#Date{
-	font-size: 1.7em;
-	font-family: algerian;
-	font-weight: bold;
-/*	display: none;*/
-}
-@media screen and (max-width: 480px) {
-.calholder{
-	transform: scale(0.8);
-}
-}
 
 .kymteq{
-	height: 150px;
+  text-align: center;
+	height: 130px;
 	background: transparent;
-	margin-top: 100px;
+	margin-top: 200px;
+  color: #fff;
+  z-index: 1;
 }
-
-
-.name1{
-	width: 250px;
-	margin-left: 30%;
-	color: #000;
-	font-weight: bold;
-	background: transparent;
-	text-align: center;
-	font-size: 3em;
-	border-bottom: 2px solid #000;
-	border-top: 2px solid #000;
-	border-left: 2px solid #000;
-
+.glitch{
+  z-index: 1;
+  font-size: 2.5em;
 }
-.name2{
-	margin-top: -2px;
-	margin-left: 100px;
-	margin-left: 45%;
-	width: 310px;
-	color: #000;
-	font-weight: bold;
-	background: transparent;
-	text-align: center;
-	font-size: 3em;
-	border-bottom: 2px solid #000;
-	border-right: 2px solid #000;
-	border-top: 2px solid #000;
-}
-
-/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-.name1 {
-  color: black;
-  animation: fadeWhite 4s forwards;
-  animation-delay: 2s;
-  position: relative;
-}
-.marto:last-child:after {
-  content: "KYMTEQ";
-  position: absolute;
-  left: 35px;
-  top: 0;
-  clip: rect(0, 900px, 0, 0);
-  background-color: transparent;
-  color: black;
-  animation: glitch 3s infinite alternate-reverse;
-  animation-delay: 4s;
-}
-.marto:last-child:before {
-  content: "KYMTEQ";
-  position: absolute;
-  left: 36px;
-  top: 0;
-  clip: rect(0, 900px, 0, 0);
-  background-color: transparent;
-  color: black;
-  animation: glitch 3s infinite alternate-reverse;
-  animation-delay: 4s;
-}
-
-@keyframes fadeWhite {
-  100% {
-    color: black;
-  }
-}
-@keyframes glitch {
-  0% {
-    clip: rect(7px, 9999px, 75px, 0);
-  }
-  5% {
-    clip: rect(52px, 9999px, 90px, 0);
-  }
-  10% {
-    clip: rect(72px, 9999px, 51px, 0);
-  }
-  15% {
-    clip: rect(69px, 9999px, 45px, 0);
-  }
-  20% {
-    clip: rect(84px, 9999px, 29px, 0);
-  }
-  25% {
-    clip: rect(29px, 9999px, 60px, 0);
-  }
-  30% {
-    clip: rect(58px, 9999px, 42px, 0);
-  }
-  35% {
-    clip: rect(88px, 9999px, 91px, 0);
-  }
-  40% {
-    clip: rect(29px, 9999px, 19px, 0);
-  }
-  45% {
-    clip: rect(42px, 9999px, 73px, 0);
-  }
-  50% {
-    clip: rect(52px, 9999px, 85px, 0);
-  }
-  55% {
-    clip: rect(59px, 9999px, 22px, 0);
-  }
-  60% {
-    clip: rect(49px, 9999px, 26px, 0);
-  }
-  65% {
-    clip: rect(22px, 9999px, 77px, 0);
-  }
-  70% {
-    clip: rect(79px, 9999px, 87px, 0);
-  }
-  75% {
-    clip: rect(85px, 9999px, 94px, 0);
-  }
-  80% {
-    clip: rect(64px, 9999px, 86px, 0);
-  }
-  85% {
-    clip: rect(31px, 9999px, 10px, 0);
-  }
-  90% {
-    clip: rect(45px, 9999px, 1px, 0);
-  }
-  95% {
-    clip: rect(82px, 9999px, 5px, 0);
-  }
-  100% {
-    clip: rect(23px, 9999px, 94px, 0);
-  }
-}
-
-
-
-
-/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-
-.name2 {
-  color: black;
-  animation: fadeWhite 4s forwards;
-  animation-delay: 2s;
-  position: relative;
-}
-.tembe:last-child:after {
-  content: "GLITCH";
-  position: absolute;
-  left: 77px;
-  top: 0;
-  clip: rect(0, 900px, 0, 0);
-  background-color: transparent;
-  color: black;
-  animation: glitch 3s infinite alternate-reverse;
-  animation-delay: 4s;
-}
-.tembe:last-child:before {
-  content: "GLITCH";
-  position: absolute;
-  left: 75px;
-  top: 0;
-  clip: rect(0, 900px, 0, 0);
-  background-color: transparent;
-  color: black;
-  animation: glitch 3s infinite alternate-reverse;
-  animation-delay: 4s;
-}
-
-@keyframes fadeWhite {
-  100% {
-    color: black;
-  }
-}
-@keyframes glitch {
-  0% {
-    clip: rect(7px, 9999px, 75px, 0);
-  }
-  5% {
-    clip: rect(52px, 9999px, 90px, 0);
-  }
-  10% {
-    clip: rect(72px, 9999px, 51px, 0);
-  }
-  15% {
-    clip: rect(69px, 9999px, 45px, 0);
-  }
-  20% {
-    clip: rect(84px, 9999px, 29px, 0);
-  }
-  25% {
-    clip: rect(29px, 9999px, 60px, 0);
-  }
-  30% {
-    clip: rect(58px, 9999px, 42px, 0);
-  }
-  35% {
-    clip: rect(88px, 9999px, 91px, 0);
-  }
-  40% {
-    clip: rect(29px, 9999px, 19px, 0);
-  }
-  45% {
-    clip: rect(42px, 9999px, 73px, 0);
-  }
-  50% {
-    clip: rect(52px, 9999px, 85px, 0);
-  }
-  55% {
-    clip: rect(59px, 9999px, 22px, 0);
-  }
-  60% {
-    clip: rect(49px, 9999px, 26px, 0);
-  }
-  65% {
-    clip: rect(22px, 9999px, 77px, 0);
-  }
-  70% {
-    clip: rect(79px, 9999px, 87px, 0);
-  }
-  75% {
-    clip: rect(85px, 9999px, 94px, 0);
-  }
-  80% {
-    clip: rect(64px, 9999px, 86px, 0);
-  }
-  85% {
-    clip: rect(31px, 9999px, 10px, 0);
-  }
-  90% {
-    clip: rect(45px, 9999px, 1px, 0);
-  }
-  95% {
-    clip: rect(82px, 9999px, 5px, 0);
-  }
-  100% {
-    clip: rect(23px, 9999px, 94px, 0);
-  }
-}
-
-
-@media screen and (max-width: 991px) {
- .name1 {
- 	margin-left: 25%;
-  }
-
-.name2{
-	margin-left:40%;
-}
-.marto:last-child:after {
- left: 35px;
-}
-.marto:last-child:before {
- left: 35px;
-}
-.tembe:last-child:after {
- left: 77px;
-}
-.tembe:last-child:before {
- left: 77px;
-}
-}
-
-@media screen and (max-width: 750px) {
- .name1 {
- 	margin-left: 15%;
-  }
-
-.name2{
-	margin-left:35%;
-}
-}
-
-@media screen and (max-width: 640px) {
- .name1 {
- 	font-size: 2.5em;
- 	margin-left: 10%;
-  }
-
-.name2{
-	font-size: 2.5em;
-	margin-left:25%;
-}
-.marto:last-child:after {
- left: 51px;
-}
-.marto:last-child:before {
- left: 51px;
-}
-.tembe:last-child:after {
- left: 91px;
-}
-.tembe:last-child:before {
- left: 91px;
-}
-}
-
 
 @media screen and (max-width: 480px) {
-  .kymteq{
-    margin-top: 50px;
-  }
- .name1 {
- 	width: 200px;
- 	font-size: 2.3em;
- 	margin-left: 1%;
-  }
-
-.name2{
-	width: 260px;
-	font-size: 2.3em;
-	margin-left:13%;
+.kymteq{
+  height: 90px;
+  font-size: 1.5em;
+  margin-top: 130px;
 }
-.marto:last-child:after {
- left: 32px;
-}
-.marto:last-child:before {
- left: 32px;
-}
-.tembe:last-child:after {
- left: 71px;
-}
-.tembe:last-child:before {
- left: 71px;
+.glitch{
+  font-size: 1.2em;
 }
 }
 
-
-@media screen and (max-width: 340px) {
-  .kymteq{
-    margin-top: 30px;
-  }
- .name1 {
-  width: 200px;
-  font-size: 2em;
-  margin-left: -5%;
-  }
-
-.name2{
-  width: 260px;
-  font-size: 2em;
-  margin-left:6%;
-}
-.marto:last-child:after {
- left: 41px;
-}
-.marto:last-child:before {
- left: 41px;
-}
-.tembe:last-child:after {
- left: 79px;
-}
-.tembe:last-child:before {
- left: 79px;
-}
-}
 
 
 .realize{
   height: auto;
   text-align: center;
-  font-family: 'Baloo Tamma', cursive;
-  font-size: 2.3em;
-  margin-top: 40px;
-  font-weight: bold;
+  font-size: 2em;
+  margin-top: 100px;
+  color: #fff;
+  z-index: 1;
   background-color: transparent;
 }
 
 @media screen and (max-width: 480px) {
 .realize{
-  font-size: 2em;
-  margin-top: 10px;
+  font-size: 1.5em;
+  margin-top: 90px;
 }
 }
 
 @media screen and (max-width: 340px) {
 .realize{
   font-size: 1.5em;
-  margin-top: 10px;
 }
 }
 
@@ -582,15 +121,40 @@ margin-left:70px;
 .navbar{
   height: 80px;
   background-color: transparent;
+  z-index: 1;
 }
 #canvas{
   background-color:transparent;
   margin-left: 15px;
   margin-top: -14px;
 }
-#major{
-  background-color: transparent;
+
+#teq{
+
+  background:transparent;
+  background-position: fill;
+  position: absolute;
   width: 100%;
-  height: 80px;
-  margin-top:-1px;
+  height: 100%;
+  border:15px solid #fff;
+}
+
+/*@media screen and (max-width: 480px) {
+#teq canvas{
+transform: scale(.9);
+}
+}
+
+@media screen and (max-width: 340px) {
+#teq canvas{
+transform: scale(.9);
+}
+}*/
+
+.copyright{
+  text-align: center;
+  color: #fff;
+  font-size: 1.1em;
+  margin-left: 20px;
+  margin-top: 40px;
 }
