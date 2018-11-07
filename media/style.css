@@ -222,15 +222,21 @@ width: 200px;
 height: 60px;
 float: left;
 background:transparent;
+text-align: center;
 }
 
 #emailpic img{
-transform: scale(0.15);
-margin-top: -50px;
+transform: scale(0.1);
+margin-top: -105px;
+margin-left: -50px;
 }
 
 .number{
-  margin-top: -50px;
+  margin-top: -100px;
+  margin-left: -40px;
+}
+.glyphicon-envelope{
+  transform: scale(2);
 }
 
 
