@@ -653,12 +653,14 @@ margin-top: 50px;
 @media screen and (max-width: 480px) {
 .pcmode{
   font-size: 1em;
-  padding-top: 10px;
 }
 .kymteq{
-  margin-top: 60px;
+  margin-top: 120px;
 }
 .realize{
  margin-top: 40px;
+}
+.site{
+  margin-top: -30px;
 }
 }
