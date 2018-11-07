@@ -664,3 +664,12 @@ margin-top: 50px;
   margin-top: -30px;
 }
 }
+
+@media screen and (max-width: 340px) {
+.site{
+  margin-top: -60px;
+}
+.realize{
+ margin-top: 40px;
+}
+}
