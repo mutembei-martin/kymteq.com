@@ -315,7 +315,7 @@ margin-left: -50px;
   color: #d9d9d9;
   font-size: 5.5em;
   font-weight: bold;
-  padding-top: 40px;
+  padding-top: 60px;
   padding-left: 60px;
   margin-top: -40px;
 }
@@ -385,6 +385,7 @@ margin-left: -50px;
   background: transparent;
   height: 400px;
   margin-top: 60px;
+   box-shadow: 0px 200px 200px 200px #000;
 }
 
 
@@ -394,6 +395,7 @@ margin-left: -50px;
   margin-left: 40px;
   background:transparent;
   color: #fff;
+
 }
 
 .user{
@@ -459,7 +461,11 @@ margin-left: -50px;
   z-index: 1;
 }*/
 
-
+.improve{
+  height: 80px;
+  background: transparent;
+  display: none;
+}
 
 
 
@@ -582,4 +588,77 @@ padding-top: 7px;
 }
 .kymm{
   color: #0ff;
+}
+/*#offor{
+  width: 200px;
+  height: 200px;
+  background: #fff;
+  display: none;
+}
+*/
+
+@media screen and (max-width: 1000px) {
+#about{
+  display: none;
+}
+#work{
+  display: none;
+}
+.menupg{
+  display: none;
+}
+.kymteq{
+  text-align: center;
+  height: 130px;
+  background: transparent;
+  margin-top: 160px;
+  color: #fff;
+  z-index: 1;
+}
+.improve{
+display: block;
+margin-top: 50px;
+
+}
+.home{
+  margin-top: -80px;
+}
+}
+
+
+@media screen and (max-width: 622px) {
+.copyright{
+  margin-left: 25%;
+}
+}
+
+/*//////////835/////*/
+
+.site{
+  text-align: center;
+  color: #009999;
+}
+.pcmode{
+  font-size: 1.3em;
+  padding-top: 10px;
+}
+
+@media screen and (max-width: 550px) {
+.pcmode{
+  font-size: 1em;
+  padding-top: 10px;
+}
+}
+
+@media screen and (max-width: 480px) {
+.pcmode{
+  font-size: 1em;
+  padding-top: 10px;
+}
+.kymteq{
+  margin-top: 60px;
+}
+.realize{
+ margin-top: 40px;
+}
 }
