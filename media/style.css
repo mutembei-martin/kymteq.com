@@ -627,6 +627,9 @@ margin-top: 50px;
 .home{
   margin-top: -80px;
 }
+#come{
+  display: none;
+}
 }
 
 
