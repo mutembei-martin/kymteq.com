@@ -81,7 +81,7 @@ var TextScramble = function () {
 // Example
 // ——————————————————————————————————————————————————
 
-var phrases = ['User Interface.', 'User Experience.', 'Brand Design.'];
+var phrases = ['User Experience.', 'Brand Design.', 'User Interface.'];
 
 var el = document.querySelector('.realize');
 var fx = new TextScramble(el);

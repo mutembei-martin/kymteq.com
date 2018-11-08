@@ -4,10 +4,19 @@
 	<style>
 .sto{
 	fill:none;
-	stroke:#0066ff;
+	stroke:#fff;
 	stroke-width:2;
 	transform:scale(.8);
 }
+
+.sto1{
+	fill:none;
+	stroke:#fff;
+	stroke-width:2;
+	transform:scale(.8);
+}
+
+
 .sto{
 	stroke-dasharray:500;
 	stroke-dashoffset:0;
@@ -18,9 +27,15 @@
 @-webkit-keyframes dash{
 	from{
 	stroke-dashoffset:500;
+	stroke:#0066ff;
+	box-shadow: 5px 5px 5px #0066ff;
+-webkit-box-shadow: 5px 5px 5px #0066ff;
 	}
 	to{
 	stroke-dashoffset:0;
+	stroke:#0066ff;
+	box-shadow: 5px 5px 5px #0066ff;
+-webkit-box-shadow: 5px 5px 5px #0066ff;
 	}
 }
 <!-- .sto{
@@ -48,6 +63,32 @@ animation:1s ease 2.8s normal forwards 1 fadein;
 opacity:0
 }
 
+<!-- ///////////////////////////////////////////////////////////////////////////////////// -->
+
+
+.first1{
+	transform:scale(.8);
+	fill:none;
+}
+.second1{
+transform:scale(.8);
+fill:none;
+}
+
+.third1{
+transform:scale(.8);
+fill:none;
+}
+
+
+
+
+
+
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
 @keyframes fadein{from{opacity:0}
 to{opacity:1}
 }
@@ -62,8 +103,20 @@ to{opacity:1}
 
 </defs>
 
-
+<path class="sto1" d="M300 50 L260 100 L260 170"/>
 <path class="sto" d="M300 50 L260 100 L260 170"/>
+
+
+<g>	
+<circle class="first1" cx="300" cy="50" r="8" stroke-width="1"  fill="#0ff"/>
+<circle class="first1" cx="300" cy="50" r="14" stroke= "#0ff" stroke-width="1" fill="none" />
+<circle class="second1" cx="260" cy="100" r="8" stroke-width="1" fill="#0ff"/>
+<circle class="second1" cx="260" cy="100" r="14" stroke= "#0ff" stroke-width="1" fill="none" />
+<circle class="third1" cx="260" cy="170" r="8" stroke-width="1" fill="#0ff" />
+<circle class="third1" cx="260" cy="170" r="14" stroke= "#0ff" stroke-width="1" fill="none" />
+
+</g>
+
 
 <g>	
 <circle class="first" cx="300" cy="50" r="8" stroke-width="1" fill="#0ff" />
@@ -74,5 +127,7 @@ to{opacity:1}
 <circle class="third" cx="260" cy="170" r="14" stroke= "#0ff" stroke-width="1" fill="none" />
 
 </g>
+
+
   Sorry, your browser does not support inline SVG.
 </svg>

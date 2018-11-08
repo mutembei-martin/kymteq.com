@@ -317,7 +317,7 @@
 
 
 
-<!-- <section id ="come" class="on off">
+<section id ="come">
 <div class="container-fluid one">
 	<div class="row">
 		<div class="lineto col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6" style="text-align: center;">
@@ -346,8 +346,8 @@
 
 		</div>
 	</div>	
-</div>	 -->
-
+</div>	
+</section>
 <!-- 		<div class="fadee1 wow fadeOut" data-wow-delay="0.7s"></div>
 		<div class="fadee2 wow fadeOut" data-wow-delay="0.7s"></div>
 		<div class="fadee3 wow fadeOut" data-wow-delay="0.7s"></div>
@@ -380,37 +380,64 @@
 <script type="text/javascript">
 	$(window).load(function(){
 
+		$("#home").delay(8000).fadeIn("slow", function() {});
+      	$("#teq").delay(5000).fadeIn("slow", function() {});
+      	$("#work").delay(8000).fadeIn("slow", function() {});
+      	$("#about").delay(8000).fadeIn("slow", function() {});
+
+
+      	$("#come")
+    .delay(5500)
+    .queue(function() {
+        $(this).css("background-color","transparent").dequeue();
+
+})
+
+    $("#come")
+    .delay(5500)
+    .queue(function() {
+        $(this).css("zIndex","-1").dequeue();
+
+})
+
+$(".realize")
+    .delay(11000)
+    .queue(function() {
+        $(this).css("display","block").dequeue();
+
+})
+
+
+      
 
 	$(".homeholder").click(function(){
       
-      document.getElementById("about").style.display= "none";
-      document.getElementById("teq").style.display= "block";
-      document.getElementById("work").style.display= "none";
-      document.getElementById("home").style.display= "block";
-
-
+      $("#about").fadeOut( "slow", function() {});
+      $("#teq").fadeIn(function() {});
+      $("#work").fadeOut( "slow", function() {});
+      $("#home").delay(400).fadeIn( "slow", function() {});
+      
     })
 
 
 
     $(".aboutholder").click(function(){
       
-      document.getElementById("home").style.display= "none";
-      document.getElementById("teq").style.display= "none";
-      document.getElementById("work").style.display= "none";
-      document.getElementById("about").style.display= "block";
+      $("#home").fadeOut(function() {});
+      $("#teq").delay(300).fadeOut(function() {});
+      $("#work").delay(200).fadeOut("slow", function() {});
+      $("#about").delay(250).fadeIn("slow", function() {});
 
 
     })
 
 
-
       $(".workholder").click(function(){
       
-      document.getElementById("home").style.display= "none";
-      document.getElementById("teq").style.display= "none";
-      document.getElementById("about").style.display= "none";
-      document.getElementById("work").style.display= "block";
+      $("#home").fadeOut(function() {});
+      $("#teq").delay(300).fadeOut(function() {});
+      $("#about").delay(200).fadeOut("slow", function() {});
+      $("#work").delay(250).fadeIn("slow", function() {});
 
 
     })
@@ -456,8 +483,6 @@
       document.getElementById("whyyyy").style.display ="block" ;
 
     })
-
-
    })
 
 
