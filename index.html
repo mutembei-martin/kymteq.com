@@ -394,6 +394,8 @@ else{
       	// $("#about").delay(8000).fadeIn("slow", function() {});	
 }
 
+	// $("#come").delay(5800).fadeOut("slow", function() {});
+
 
       	$("#come")
     .delay(5500)
@@ -402,19 +404,23 @@ else{
 
 })
 
-    $("#come")
-    .delay(5500)
-    .queue(function() {
-        $(this).css("zIndex","-1").dequeue();
+    $("#come").delay(5100).fadeOut("slow", function() {});
 
-})
+//     $("#come")
+//     .delay(5500)
+//     .queue(function() {
+//         $(this).css("zIndex","-1").dequeue();
 
-$(".realize")
-    .delay(11000)
-    .queue(function() {
-        $(this).css("display","block").dequeue();
+// })
 
-})
+$(".realize").delay(11000).fadeIn("slow", function() {});
+
+// $(".realize")
+//     .delay(11000)
+//     .queue(function() {
+//         $(this).css("display","block").dequeue();
+
+// })
 
 
       
@@ -424,7 +430,7 @@ $(".realize")
       $("#about").fadeOut( "slow", function() {});
       $("#teq").fadeIn(function() {});
       $("#work").fadeOut( "slow", function() {});
-      $("#home").delay(400).fadeIn( "slow", function() {});
+      $("#home").delay(500).fadeIn( "slow", function() {});
       
     })
 

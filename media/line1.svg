@@ -28,14 +28,14 @@
 	from{
 	stroke-dashoffset:500;
 	stroke:#0066ff;
-	box-shadow: 5px 5px 5px #0066ff;
--webkit-box-shadow: 5px 5px 5px #0066ff;
+	-webkit-filter: drop-shadow( 2px -2px 2px #0066ff ); 
+            filter: drop-shadow( 2px -2px 2px #0066ff );
 	}
 	to{
 	stroke-dashoffset:0;
 	stroke:#0066ff;
-	box-shadow: 5px 5px 5px #0066ff;
--webkit-box-shadow: 5px 5px 5px #0066ff;
+	-webkit-filter: drop-shadow( 2px -2px 2px #0066ff ); 
+            filter: drop-shadow( 2px -2px 2px #0066ff );
 	}
 }
 <!-- .sto{
