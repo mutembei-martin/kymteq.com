@@ -472,30 +472,64 @@ $(".realize").delay(11000).fadeIn("slow", function() {});
 
 
     $("#whyyyy").mouseover(function(){
-      
-      document.getElementById("whyyyy").style.width ="100%" ;
+
+    	    	$("#whyyyy")
+    .delay(200)
+    .queue(function() {
+        $(this).css("width","100%").dequeue();
+
+})
 
     })
 
 
 	$("#whyyyy").mouseout(function(){
       
-      document.getElementById("whyyyy").style.width ="50%" ;
+      $("#whyyyy")
+    // .delay(1000)
+    .queue(function() {
+        $(this).css("width","50%").dequeue();
+
+})
 
     })
 
     $(".whoooo").mouseover(function(){
-      
-      document.getElementById("whyyyy").style.width ="0" ;
-      document.getElementById("whyyyy").style.display ="none" ;
+
+
+    	$("#whyyyy")
+    .delay(200)
+    .queue(function() {
+        $(this).css("width","0%").dequeue();
+
+})
+
+    $("#whyyyy")
+    // .delay(1000)
+    .queue(function() {
+        $(this).css("display","none").dequeue();
+
+})
 
     })
 
 
 	$(".whoooo").mouseout(function(){
       
-      document.getElementById("whyyyy").style.width ="50%" ;
-      document.getElementById("whyyyy").style.display ="block" ;
+    $("#whyyyy")
+    // .delay(1000)
+    .queue(function() {
+        $(this).css("width","50%").dequeue();
+
+})
+
+
+    $("#whyyyy")
+    // .delay(1000)
+    .queue(function() {
+        $(this).css("display","block").dequeue();
+
+})
 
     })
    })
