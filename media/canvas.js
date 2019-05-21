@@ -1,17 +1,22 @@
 // import utils from './utils'
 
-const canvas = document.querySelector('canvas')
+const canvas = document.getElementById('canvasteq')
 const c = canvas.getContext('2d')
 
-canvas.width = innerWidth - 30;
+if (innerWidth > 480) {
+canvas.width = (0.94 * innerWidth) - 17;
 canvas.height = innerHeight-30;
-
-const mouse = {
-    x: innerWidth / 2,
-    y: innerHeight / 2
+}else{
+  canvas.width = innerWidth -15;
+  canvas.height = innerHeight - 15;  
 }
 
-const colors = ['#0ff', '#000', '#00ff00', '#009999'];
+const mouse = {
+    x: (innerWidth - 17) / 2,
+    y: (innerHeight - 17) / 2
+}
+
+const colors = ['#0ff', '#fff', '#00ff00', '#009999'];
 
 // Event Listeners
 addEventListener('mousemove', event => {
@@ -20,8 +25,14 @@ addEventListener('mousemove', event => {
 });
 
 addEventListener('resize', () => {
-    canvas.width = innerWidth -30;
-    canvas.height = innerHeight -30;
+    if (innerWidth > 480) {
+canvas.width = (0.94 * innerWidth) - 17;
+canvas.height = innerHeight-30;
+}else{
+  canvas.width = innerWidth - 15;
+  canvas.height = innerHeight - 15;  
+}
+
 
     init()
 });
@@ -50,15 +61,15 @@ function Particle(x, y, radius, color) {
     this.color = color 
     this.radians = Math.random() * Math.PI * 2;
     this.velocity = 0.03;
-    if (innerWidth < 310) {
-        this.distanceFromCenter = randomIntFromRange (50,100);
+    if (innerWidth < 620) {
+        this.distanceFromCenter = randomIntFromRange (40,140);
     }
-    else if (innerWidth < 434){
+    else if (innerWidth < 1000){
 
-        this.distanceFromCenter = randomIntFromRange (70,140);
+        this.distanceFromCenter = randomIntFromRange (50,170);
     }
     else{
-        this.distanceFromCenter = randomIntFromRange (80,160);
+        this.distanceFromCenter = randomIntFromRange (60,190);
     }
     
     // this.lastMouse = {x: x, y: y};
@@ -82,7 +93,7 @@ function Particle(x, y, radius, color) {
     };
 
    this.draw = lastPoint => { 
-    c.beginPath()
+    c.beginPath();
     c.strokeStyle = this.color;
     c.lineWidth = this.radius;
     c.moveTo(lastPoint.x, lastPoint.y);
@@ -97,11 +108,21 @@ function Particle(x, y, radius, color) {
 let particles;
 function init() {
     particles = [];
+    if (innerWidth < 1000) {
+        for (let i = 0; i < 20; i++) {
+             const radius = (Math.random() * 2) + 1;
+            particles.push(new Particle(canvas.width / 2, canvas.height / 2, radius, randomColor(colors)));
+            }
+   } 
+   else{
 
-    for (let i = 0; i < 50; i++) {
-        const radius = (Math.random() * 2) + 1;
-        particles.push(new Particle(canvas.width / 2, canvas.height / 2, radius, randomColor(colors)));
-    }
+    for (let i = 0; i < 24; i++) {
+             const radius = (Math.random() * 2) + 1;
+            particles.push(new Particle(canvas.width / 2, canvas.height / 2, radius, randomColor(colors)));
+            }
+
+
+   }
 }
 
 // Animation Loop
@@ -115,5 +136,12 @@ function animate() {
     });
 }
 
-init()
-animate()
+init();
+animate();
+
+
+
+
+
+
+
